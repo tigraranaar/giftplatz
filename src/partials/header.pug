@@ -1,0 +1,9 @@
+.main
+    .header
+        .header__logo
+            img(src="../images/logo.svg", alt="")
+        a.header__burger(href='#PhoneMenu', role='button', data-toggle='modal')
+            include ../images/menu.svg
+        include ../partials/phone-menu.pug
+        include ../partials/nav.pug
+    block title

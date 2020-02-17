@@ -1,0 +1,89 @@
+@import 'fonts';
+@import './media.scss';
+@import './header.scss';
+@import './phone-menu.scss';
+@import './nav.scss';
+@import './footer.scss';
+
+@import './product-item.scss';
+
+body {
+  min-width: 320px;
+  font-family: 'Roboto-Regular', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  @media(max-width: 320px){
+    min-width: 320px !important;
+  }
+}
+
+.activePhone {
+  color: #656666 !important;
+}
+
+#pagelinks {
+  margin-bottom: -1px;
+  background-color: #e7e9e6;
+  
+  .container {
+    .row {
+      nav {
+        ol {
+          margin-bottom: 0;
+          background-color: #e7e9e6 !important;
+  
+          li {
+            padding: 0;
+            
+            a {
+              color: #2d3033;
+              text-decoration: underline;
+            }
+
+            span {
+              padding: 0 10px;
+            }
+
+            &:before {
+              display: none;
+            }
+          }
+          .active {
+  
+          }
+        }
+      }
+    }
+  }
+}
+
+#titlebox {
+  padding-bottom: 100px;  
+
+  @media(max-width:991px){
+    padding-bottom: 60px;  
+  }
+  
+  .titlebox__title {
+    font-family: Didona;
+    font-size: 51px;
+    padding-top: 33px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media(max-width:991px){
+      font-size: 36px;
+      padding-top: 0;
+    }
+  }
+  .titlebox__border {
+    border-bottom: 1px solid grey;
+    width: 200px;
+    margin: 0 auto;
+
+    @media(max-width:991px){
+      margin-top: 37px;
+    }
+  }
+}

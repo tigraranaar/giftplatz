@@ -1,0 +1,51 @@
+.main {
+  background: #ffffff url(../images/bg.jpg) 100% 100% no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  @media(max-width:1906px){
+    background-size: auto;
+  }
+
+  .header {
+    position: relative;
+    padding-bottom: 35px;
+
+    &__burger {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      @media(min-width:992px){
+        display: none;
+      }
+    }
+
+    &__logo {
+      text-align: center;
+      padding: 55px 0 25px 0;        
+      font-family: 'Roboto-Light';
+      width: 415px;
+      margin: 0 auto;
+
+      @media(max-width:992px){
+        padding: 47px 0 25px 0;
+        width: 330px;
+      }
+
+      @media(max-width:767px){
+        padding: 40px 0 19px 0;
+      }
+
+      @media(max-width:575px){
+        width: 100%;
+      }
+
+      img {
+        @media(max-width:575px){
+          width: 50%;
+        }
+      }
+    }
+  }
+} 

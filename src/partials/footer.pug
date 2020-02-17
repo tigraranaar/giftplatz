@@ -1,0 +1,69 @@
+.footer 
+  .footer__container.container
+    .footer__row.row
+      .footer__contacts.contacts.col-xl-4.col-lg-4.col-md-8.col-sm-8.col-xs-6
+        h5.contacts__title.footer__title
+          | КОНТАКТЫ
+        ul.contacts__ul
+          li.contacts__item
+            span A.:  
+            | г.Москва, ул. Краснобогатырская д2.стр2
+          li.contacts__item
+            span Т.:  
+            | +7(495) 728-66-50        
+          li.contacts__item   
+            span П.:  
+            | zakaz@giftplatz.ru   
+          li.contacts__item  
+            span   
+            |                 
+          li.contacts__item.contacts__item--social
+            | Найдите нас:
+            .social__box
+              a(href="")  
+                img(src="../images/inst.png", alt="Instagram")
+              a(href="") 
+                img(src="../images/fb.png", alt="Facebook")
+            
+      .footer__map.map.col-xl-3.col-lg-3.col-md-4.col-sm-4.col-xs-6
+        h5.map__title.footer__title
+          | КАРТА САЙТА
+        ul.map__ul
+          li.map__item
+            a(href='index.html') Главная
+          li.map__item
+            a(href='assortment.html') Ассортименты
+          li.map__item
+            a(href='corporate.html') Корпоративные Подарки
+          li.map__item
+            a(href='pack.html') Упаковка
+          li.map__item
+            a(href='contacts.html') Контакты
+
+      .footer__subscribe.subscribe.col-xl-5.col-lg-5.col-md-12.col-sm-12.col-xs-12
+        h5.subscribe__title.footer__title
+          | ПОДПИШИТЕСЬ НА НАШУ РАССЫЛКУ
+        form#subscribeform.subscribe__box.needs-validation(action="", method="", novalidate='')
+          input#subscribeinput.subscribe__input(type="email", placeholder="Напишите Вашу электронную почту") 
+          .invalid-feedback#invalid-feedback.d-block.invisible
+            |   Неправильный формат почты
+          button#subscribe__validcheck.subscribe__button.subscribe__validcheck(type="submit") ПОДПИСАТЬСЯ
+          button#subscribe__openmodal.d-none(data-toggle="modal", data-target="#subscribeModal")    
+
+        #subscribeModal.modal.fade
+          .modal-dialog.modal-dialog-centered.container(role='document')
+            .modal-content
+              .modal-header
+                .modal-title
+                  img(src="../images/logo.svg", alt="")
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') ×
+              .modal-body
+                p
+                  | Спасибо за подписку!
+
+        .subscribe__logo
+          include ../images/footer_logo.svg
+  .footer__giftplatz
+    | © 2018 Giftplatz. Все права защищены. 
+    

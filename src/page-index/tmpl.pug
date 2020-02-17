@@ -1,0 +1,59 @@
+extend ../partials/page.pug
+block title
+  .titlebox
+    h1.titlebox__title
+      | ШОКОЛАД
+    h3.titlebox__subtitle
+      | и не только... 
+  .scrollbox
+    include ../images/scroll.svg
+    include ../images/arrow_down.svg
+    p
+      | Узнать больше
+       
+block section
+  .about
+    .about__box.container
+      .about__wrapper.row
+        .about__imagebox.imagebox.col-xl-5.col-lg-6.col-md-12
+          .imagebox__wrapper
+            img.imagebox__photo(src="../images/about.png", alt="")
+        .about__text.col-xl-7.col-lg-6.col-md-12
+          h2
+            | О НАС
+          p
+            | There are many variations of passages of Lorem Ipsum available, but the majority 
+            | have suffered alteration in some form, by injected humour, or randomised words 
+            | which don't look even slightly believable. If you are going to use a passage 
+            | of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden 
+            | in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat 
+            | predefined chunks as necessary, making this the first true generator on the Internet. 
+            | It uses a dictionary of over 200 Latin words, combined with a handful of model 
+            | sentence structures, to generate Lorem Ipsum which looks reasonable. The 
+            | generated Lorem Ipsum is therefore always free from repetition, injected humour, 
+            | or non-characteristic words etc.
+          p.second__paragraph
+            | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below 
+            | for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum 
+            | et Malorum" by Cicero are also reproduced in their exact original form, 
+            | accompanied by English versions from the 1914 translation by H. Rackham.
+  .actual
+    .actual__wrapper.container
+      include ../partials/titlebox
+      +titlebox('Актуальное сейчас')
+      .actual__assortment.row
+        include ../partials/product-item
+        .product-item.product.col-lg-4.col-xl-4.col-md-6
+          +product-item('product__image-1', 'dddddddddddddddddd', 'Шоколад')
+        .product-item.product.col-lg-4.col-xl-4.col-md-6
+          +product-item('product__image-2', 'dddddddddddddddddd', 'Шоколад')
+        .product-item.product.col-lg-4.col-xl-4.col-md-6
+          +product-item('product__image-3', 'dddddddddddddddddd', 'Шоколад')
+        .product-item.product.col-lg-4.col-xl-4.col-md-6
+          +product-item('product__image-4', 'dddddddddddddddddd', 'Шоколад')
+        .product-item.product.col-lg-4.col-xl-4.col-md-6
+          +product-item('product__image-5', 'dddddddddddddddddd', 'Шоколад')
+        .product-item.product.col-lg-4.col-xl-4.col-md-6
+          +product-item('product__image-6', 'dddddddddddddddddd', 'Шоколад')
+          
+          
