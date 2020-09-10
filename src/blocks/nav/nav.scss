@@ -8,7 +8,7 @@
   max-width: 100%;
   top: 0;
 }
-
+ 
 .header__nav {
   justify-content: center;
   padding-left: 4.4%;
@@ -25,7 +25,7 @@
     font-size: 17px;
 
     .call__phone {
-      font-family: 'Roboto-medium';
+
     }
 
     .call__number {
@@ -44,7 +44,6 @@
     .nav__menu {
       margin: 0;
       width: 100%;
-      font-family: 'Roboto-Light';
       align-items: center;
   
       .active {
@@ -69,20 +68,22 @@
           }  
         }
         .dropdown-menu {
-          background-color: #2d3033;
+          background: url(../images/bg_menu.png);
+          // background-color: #2d3033;
           padding-left: 2px;
-          border: 20px solid rgba(255, 0, 0, 0) !important;
+          // border: 20px solid rgba(255, 0, 0, 0) !important;
+          border:  0;
           margin: 0 !important;
           top: 40px !important;
 
-          &:after {
-            content: '';
-            position: absolute;
-            left: 1px;
-            top: -38px;
-            border: 20px solid transparent;
-            border-bottom: 19px solid #2d3033;
-           }
+          // &:after {
+          //   content: '';
+          //   position: absolute;
+          //   left: 1px;
+          //   top: -38px;
+          //   border: 20px solid transparent;
+          //   border-bottom: 19px solid #2d3033;
+          //  }
 
           .dropdown-item {
             color: white;
@@ -107,6 +108,8 @@
         float: left;
         font-size: 17px;
         height: 48px;
+        text-transform: uppercase;
+        margin-left: 10px !important; ///
 
         &:first-child {
           @media(min-width: 1140px) and (max-width: 1400px){

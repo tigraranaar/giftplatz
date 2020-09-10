@@ -1,10 +1,12 @@
-extends ./template.pug
-
-block head
-  include ./head.pug
-block content
-  block header
-    include ./header.pug
-  block section   
-  block footer
-    include ./footer.pug
+doctype html
+html(lang="ru")
+  head
+    include ../blocks/head/head.pug
+  body 
+    block content
+      block header
+        include ../blocks/header/header.pug
+      block section   
+      block footer
+        include ../blocks/footer/footer.pug
+        

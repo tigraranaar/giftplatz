@@ -11,10 +11,10 @@ block section
               li.breadcrumb-item.active(aria-current='page') Ассортимент
   .assortment 
     .assortment__wrapper.container
-        include ../partials/titlebox
+        include ../blocks/titlebox/titlebox
         +titlebox('Ассортимент')
         .assortment_product.product.row
-          include ../partials/product-item
+          include ../blocks/product-item/product-item
           .product-item.product.col-lg-4.col-xl-4.col-md-6
             +product-item('product__image-8', 'dddddddddddddddddd', 'Шоколад', 'innerassortment.html')
           .product-item.product.col-lg-4.col-xl-4.col-md-6

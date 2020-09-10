@@ -1,6 +1,7 @@
 .about {
   background-color: #e7e9e6;
   padding-top: 75px;
+  padding-top: 0;
   padding-bottom: 90px;
   border-bottom: 2px solid #adb2b5;;
 
@@ -28,7 +29,7 @@
 
     .imagebox__wrapper {
       display: inline-block;
-      border: 8px solid #d4d6d4;
+      // border: 8px solid #d4d6d4;
       position: relative;
       width: 483px;
       height: 483px;
@@ -55,8 +56,8 @@
         object-fit: cover;
         position: relative;
         top: 15px;
-        left: 15px;
-        border: 8px solid white;
+        // left: 15px;
+        // border: 8px solid white;
         box-sizing: content-box;
 
         @media(max-width:767px){
@@ -136,7 +137,7 @@
         display: flex;
         width: 483px;
         margin-top: 60px;
-        margin-left: 23px;
+        // margin-left: 23px;
         padding-left: 0;
 
         @media(max-width:1439px){
@@ -174,7 +175,7 @@
             }
         }
     }
-  }
+  }       
 
   .about__text {
     width: 100%;
@@ -188,8 +189,7 @@
         color: #2d3033 !important;
 
         h2 {
-            font-family: Roboto-Medium !important; 
-            font-size: 30px !important;
+            // font-size: 30px !important;
             padding-top: 45px;
             text-align: left !important;
 
@@ -219,7 +219,6 @@
     }
 
     p {
-      font-family: Roboto-Light;
       color: rgba(76, 80, 83, 255);
 
       padding-top: 18px;
@@ -245,7 +244,6 @@
       padding-top: 8px;
     }
     .price {
-        font-family: Didona;
         font-weight: bolder;
         font-size: 30px;
         margin-top: 40px;

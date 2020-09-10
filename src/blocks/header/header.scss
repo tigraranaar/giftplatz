@@ -1,11 +1,13 @@
 .main {
-  background: #ffffff url(../images/bg.jpg) 100% 100% no-repeat;
-  background-position: top;
+  // background: #ffffff url(../images/bg.jpg) 100% 100% no-repeat;
+  background: #ffffff url(../images/bg.png) 100% 100% no-repeat;
+  
+  background-position: center;
   background-size: cover;
 
-  @media(max-width:1906px){
-    background-size: auto;
-  }
+  // @media(max-width:1906px){
+  //   background-size: auto;
+  // }
 
   .header {
     position: relative;
@@ -23,8 +25,7 @@
 
     &__logo {
       text-align: center;
-      padding: 55px 0 25px 0;        
-      font-family: 'Roboto-Light';
+      padding: 55px 0 25px 0;     
       width: 415px;
       margin: 0 auto;
 
@@ -41,7 +42,15 @@
         width: 100%;
       }
 
-      img {
+      svg {
+        width: 100%;
+
+        .st0 {
+          fill: #ffffff !important;
+        }
+
+        // width: 450px;
+        
         @media(max-width:575px){
           width: 50%;
         }

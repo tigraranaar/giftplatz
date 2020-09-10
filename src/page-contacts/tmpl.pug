@@ -10,10 +10,15 @@ block section
                             span > 
                         li.breadcrumb-item.active(aria-current='page') Контакты
     #contacts_page
-        .contacts
+        .contacts 
             .contacts_box.container
-                h2.contacts__title.row
-                    |   КОНТАКТЫ
+
+                include ../blocks/titlebox/titlebox
+                +titlebox('КОНТАКТЫ')
+                    .titlebox__border
+
+                //- h2.contacts__title.row
+                //-     |   КОНТАКТЫ
                 ul.contacts__list.row
                     li.contacts__item
                         span A.:  
@@ -33,9 +38,13 @@ block section
                                 include ../images/fb.svg
         .touch
             .touch_box.container
-                h3.touch__title.row
-                    | ОСТАВЬТЕ СООБЩЕНИЕ
-                .touch__underline
+                include ../blocks/titlebox/titlebox
+                +titlebox('ОСТАВЬТЕ СООБЩЕНИЕ')
+                    .titlebox__border
+                
+                //- h3.touch__title.row
+                //-     | ОСТАВЬТЕ СООБЩЕНИЕ
+                //- .touch__underline
 
                 form#contactform.touch__wrapper.needs-validation.row(action="", method="", novalidate='')
                     .touch__left.col-lg-6.col-xl-6

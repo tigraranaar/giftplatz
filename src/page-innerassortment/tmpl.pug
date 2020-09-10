@@ -63,7 +63,7 @@ block section
               img.itemclick(src="../images/item4.png")
 
         .about__text.col-xl-6.col-lg-6.col-md-12
-          include ../partials/titlebox
+          include ../blocks/titlebox/titlebox
           +titlebox('ТЕМНЫЙ ШОКОЛАД / БИСКВИТ') 
           p
             | There are many variations of passages of Lorem Ipsum available, but the majority 
@@ -86,10 +86,10 @@ block section
 
   .innerassortment
     .innerassortment__wrapper.container
-        include ../partials/titlebox
+        include ../blocks/titlebox/titlebox
         +titlebox('ПОХОЖИЕ ПРОДУКТЫ')
         .innerassortment_product.product.row
-          include ../partials/product-item
+          include ../blocks/product-item/product-item
           .product-item.product.col-lg-4.col-xl-4.col-md-6
             +product-item('product__image-8', 'dddddddddddddddddd', 'Шоколад')
           .product-item.product.col-lg-4.col-xl-4.col-md-6

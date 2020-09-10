@@ -1,6 +1,5 @@
 .footer {
   border-top: 1px solid #c7cac6;
-  font-family: 'Roboto-Regular';
   padding: 50px 0 20px 0;
 
   .footer__title {
@@ -8,7 +7,6 @@
   }
 
   .footer__giftplatz {
-    font-family: 'Roboto-Light';
     font-size: 13px;
     padding-top: 60px;
     text-align: center;
@@ -22,7 +20,6 @@
     .footer__row {
       .footer__contacts {
         .contacts__title {
-          font-family: 'Roboto-Regular';
           font-size: 16px;
         }
         .contacts__ul {
@@ -34,10 +31,6 @@
             padding-top: 10px;
             color: rgba(45, 48, 51, 255);
             font-size: 13px;
-
-            span {
-              font-family: 'Roboto-Medium';
-            }
           }
 
           .contacts__item--social {
@@ -52,14 +45,11 @@
         }
       }
       .footer__map {
-        font-family: 'Roboto-Light';
-
         @media(max-width:575px){
           display: none;
         }
 
         .map__title {
-          font-family: 'Roboto-Regular';
           font-size: 16px;
         }
   
@@ -74,20 +64,18 @@
 
             a {
               color: rgba(76, 80, 83, 255);
+              text-transform: uppercase;
             }
           }
         }
       }
 
       .footer__subscribe {
-        font-family: 'Roboto-Light';
-          
         @media(max-width:991px){
           padding-top: 50px;
         }
 
         .subscribe__title {
-          font-family: 'Roboto-Regular';
           font-size: 16px;
           color: rgba(76, 80, 83, 255);
         }
@@ -139,6 +127,7 @@
             order: 2;
             display: flex;
             justify-content: center;
+            align-items: center;
           }
         }
 
@@ -191,6 +180,8 @@
         }
         
         .subscribe__logo {
+          width: 130px;
+          
           @media(max-width:575px){
             text-align: center;
             padding-top: 20px;

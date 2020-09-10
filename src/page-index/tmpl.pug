@@ -5,11 +5,11 @@ block title
       | ШОКОЛАД
     h3.titlebox__subtitle
       | и не только... 
-  .scrollbox
-    include ../images/scroll.svg
-    include ../images/arrow_down.svg
-    p
-      | Узнать больше
+  //- .scrollbox
+  //-   include ../images/scroll.svg
+  //-   include ../images/arrow_down.svg
+  //-   p
+  //-     | Узнать больше
        
 block section
   .about
@@ -22,27 +22,25 @@ block section
           h2
             | О НАС
           p
-            | There are many variations of passages of Lorem Ipsum available, but the majority 
-            | have suffered alteration in some form, by injected humour, or randomised words 
-            | which don't look even slightly believable. If you are going to use a passage 
-            | of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden 
-            | in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat 
-            | predefined chunks as necessary, making this the first true generator on the Internet. 
-            | It uses a dictionary of over 200 Latin words, combined with a handful of model 
-            | sentence structures, to generate Lorem Ipsum which looks reasonable. The 
-            | generated Lorem Ipsum is therefore always free from repetition, injected humour, 
-            | or non-characteristic words etc.
+            | Компания GiftPlatz занимается разработкой и производством оригинальных подарков.
           p.second__paragraph
-            | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below 
-            | for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum 
-            | et Malorum" by Cicero are also reproduced in their exact original form, 
-            | accompanied by English versions from the 1914 translation by H. Rackham.
+            | В основе каждого подарка GiftPlatz – вкус и, в первую очередь это вкус шоколада. 
+            | Мы сами производим шоколад,  используя лучшее импортное сырье и необычные рецепты.
+          p.second__paragraph
+            | Мы создаем концепцию подарка индивидуально для каждого клиента. Подбираем все 
+            | составляющие , изготавливаем под каждый подарок упаковку и полиграфические материалы.  
+            | У нас собственное производство упаковки, подарочных коробок, открыток и пакетов.
+          p.second__paragraph
+            | Своим  клиентам мы всегда готовы предложить  стильные и практичные идеи.
+          p.second__paragraph
+            | С нами вы не окажетесь в нелепой ситуации обмена ненужными сувенирами с партнерами. 
+
   .actual
     .actual__wrapper.container
-      include ../partials/titlebox
+      include ../blocks/titlebox/titlebox
       +titlebox('Актуальное сейчас')
       .actual__assortment.row
-        include ../partials/product-item
+        include ../blocks/product-item/product-item
         .product-item.product.col-lg-4.col-xl-4.col-md-6
           +product-item('product__image-1', 'dddddddddddddddddd', 'Шоколад')
         .product-item.product.col-lg-4.col-xl-4.col-md-6
