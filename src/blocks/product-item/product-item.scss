@@ -4,7 +4,12 @@
 
   .productbox__image {
     height: 350px;
-    // border: 5px solid white;
+    opacity: 1;
+    transition: opacity 1.5s;
+
+    &.lazy {
+      opacity: 0;
+    }
 
     @media(max-width:1439px){
       height: 270px;

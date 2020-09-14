@@ -18,6 +18,11 @@ body {
   }
 }
 
+.lazy {
+  background-image: none !important;
+  background-color: #F1F1FA;
+}
+
 .activePhone {
   color: #656666 !important;
 }
