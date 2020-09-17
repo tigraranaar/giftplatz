@@ -1,0 +1,31 @@
+block nav
+
+nav.header__nav.nav.navbar.navbar-expand-lg.container
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.nav__menu.row
+      li.nav__item.nav-item
+        a.nav__link.nav-link(href='index.html') 
+          span.nav__underline Главная
+      li.nav__item.nav-item
+        a.nav__link.nav-link(href='assortment.html') 
+          span.nav__underline Ассортимент
+      li.nav__item.nav-item.dropdown
+        a#navbarDropdown.nav__link.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown')
+          span.nav__underline Корпоративные подарки
+        .dropdown-menu
+          a.dropdown-item(href='ddtest.html')
+            span  Корпоративные подарки 1
+          a.dropdown-item(href='corporate.html') 
+            span  Корпоративные подарки 2
+          a.dropdown-item(href='pack.html') 
+            span Корпоративные подарки 3
+      li.nav__item.nav-item
+        a.nav__link.nav-link(href='pack.html') 
+          span.nav__underline Упаковка
+      li.nav__item.nav-item
+        a.nav__link.nav-link(href='contacts.html') 
+          span.nav__underline Контакты
+  .call
+      .call__phone
+        | Тел.: &nbsp;   
+      a.call__number(href="tel:+74957286650") +7 (495) 728-66-50

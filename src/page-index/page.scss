@@ -1,0 +1,207 @@
+.main {
+  .titlebox {
+    text-align: center;
+    padding-top: 181px;
+    padding-bottom: 265px;
+    color: #ffffff;
+
+    @media(max-width: 991px){
+      padding-top: 182px;
+      padding-bottom: 265px;
+    }
+
+    @media(max-width:767px){
+      padding-top: 73px;
+      padding-bottom: 125px;
+    }
+
+    &__title {
+      font-size: 100px;
+      margin: 0;
+
+      @media(max-width: 991px){
+        font-size: 95px;
+      }
+
+      @media(max-width:767px){
+        font-size: 52px;
+      }
+    } 
+  
+    &__subtitle {
+      font-size: 50px;
+
+      @media(max-width: 991px){
+        font-size: 43px;
+      }
+
+      @media(max-width: 767px){
+        font-size: 23px;
+      }
+
+    }
+  }  
+}
+
+.about {
+  background-color: #e7e9e6;
+  padding-top: 75px;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #adb2b5;;
+
+  @media(max-width:767px){
+    padding-top: 0;
+  }
+
+  @media(max-width:991px){
+    padding-top: 26px;
+    padding-bottom: 36px;
+  }
+
+  .about__imagebox {
+    width: 100%;
+
+    @media(max-width:991px){
+      display: none;
+    }
+
+    .imagebox__wrapper {
+      display: inline-block;
+      position: relative;
+
+      .imagebox__photo {
+        width: 100%;
+        box-sizing: content-box;
+        object-fit: cover;
+        height: 480px;
+
+        @media(max-width:1440px){
+          height: 380px;
+        }
+
+        @media(max-width:1200px){
+          height: 480px;
+        }
+      }
+    }
+  }
+
+  .about__text {
+    width: 100%;
+    text-align: justify;
+
+    @media(max-width:991px){
+      h2 {
+        text-align: center;
+      }
+    }
+
+    h2 {
+      font-size: 102px;
+      font-size: 30px;
+      margin-bottom: 40px;
+
+      @media(max-width:767px){
+        font-size: 62px;
+      } 
+
+      @media(max-width: 1440px){
+        padding-top: 0;
+      }
+    }
+
+
+    p {
+      padding-right: 70px;
+      padding-top: 8px;
+
+      @media(max-width:767px){
+        padding-top: 5px;
+        line-height: 24px;
+      }
+
+      @media(max-width:991px){
+        line-height: 26px;
+        padding: 0 14px;
+        padding-top: 13px;
+      }
+
+      @media(max-width: 1440px){
+        padding: 0;
+      }
+    }
+  }    
+}
+
+.actual {
+  background-color: #e7e9e6;
+  padding-top: 50px;
+  padding-bottom: 112px;  
+
+  @media(max-width:991px){
+    padding-bottom: 10px;  
+  }
+
+  .actual__wrapper {
+
+    .titlebox {
+      padding-bottom: 60px !important;
+
+      .titlebox__border {
+        border-bottom: 2px solid #2d3033 !important;
+        width: 225px !important;
+        margin-top: 40px !important;
+      }
+    }
+
+    .actual__assortment { 
+      justify-content: space-between;
+
+      .product {
+
+        @media(min-width:992px){
+          flex: 0 0 31% !important;
+          max-width: 31% !important;
+        }
+      
+        .product__box {
+          #product__image-1 {
+            background: #ffffff url(../images/product_1.png) 100% 100% no-repeat;
+            background-position: top;
+            background-size: cover;
+          }
+          #product__image-2 {
+            background: #ffffff url(../images/product_1.png) 100% 100% no-repeat;
+            background-position: top;
+            background-size: cover;
+          }
+          #product__image-3 {
+            background: #ffffff url(../images/product_1.png) 100% 100% no-repeat;
+            background-position: top;
+            background-size: cover;
+          }
+          #product__image-4 {
+            background: #ffffff url(../images/product_1.png) 100% 100% no-repeat;
+            background-position: top;
+            background-size: cover;
+          }
+          #product__image-5 {
+            background: #ffffff url(../images/product_1.png) 100% 100% no-repeat;
+            background-position: top;
+            background-size: cover;
+          }
+          #product__image-6 {
+            background: #ffffff url(../images/product_1.png) 100% 100% no-repeat;
+            background-position: top;
+            background-size: cover;
+          }
+          #product__image-7 {
+            background: #ffffff url(../images/product_1.png) 100% 100% no-repeat;
+            background-position: top;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}

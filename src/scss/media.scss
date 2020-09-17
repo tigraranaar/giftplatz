@@ -1,0 +1,24 @@
+@import 'bootstrap/scss/mixins/_breakpoints.scss';
+
+$grid-breakpoints: ( 
+  xs: 0,
+  sx: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  gl: 1140px,
+  xl: 1440px
+); 
+
+
+@include media-breakpoint-up(sm) {
+  
+}
+
+@include media-breakpoint-down(sm) {
+
+}
+
+@include media-breakpoint-between(sm, md) {
+
+}

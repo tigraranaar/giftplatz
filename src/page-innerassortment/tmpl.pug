@@ -1,0 +1,98 @@
+extend ../partials/page.pug
+block section
+  .innerproduct
+    .innerproduct__wrapper.container
+      .innerproduct__item.row
+        .prod.col-lg-6.col-xl-6.col-md-12
+        .text.col-lg-6.col-xl-6.col-md-12
+
+  .pagelinks#pagelinks
+    .container
+      .row
+        nav(aria-label='breadcrumb')
+          ol.breadcrumb
+            li.breadcrumb-item
+              a(href='index.html') Главная 
+              span > 
+            li.breadcrumb-item
+              a(href='assortment.html') Ассортимент
+              span > 
+            li.breadcrumb-item.active(aria-current='page') ТЕМНЫЙ ШОКОЛАД / БИСКВИТ
+  .about
+    .about__box.container
+      .about__wrapper.row
+        .about__imagebox.imagebox.col-xl-6.col-lg-6.col-md-12
+          .imagebox__wrapper(data-toggle="modal", data-target="#lightbox")
+            img#imagebox__main.imagebox__photo(src="../images/item4.png", alt="")
+
+          #lightbox.modal.fade
+            .modal-dialog.modal-dialog-centered(role='document')
+              .modal-content
+                .modal-body
+                  #carouselExampleCaptions.carousel(data-ride='carousel', data-interval="false")
+                    .carousel-inner
+                      .carousel-item.active
+                        img.d-block.w-100(src='../images/item4.png')
+                      .carousel-item
+                        img.d-block.w-100(src='../images/item2.png')
+                      .carousel-item
+                        img.d-block.w-100(src='../images/item3.png')
+                      .carousel-item
+                        img.d-block.w-100(src='../images/item2.png')
+                      .carousel-item
+                        img.d-block.w-100(src='../images/item4.png')                          
+                    a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
+                      span.carousel-control-prev-icon(aria-hidden='true')
+                      span.sr-only Previous
+                    a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
+                      span.carousel-control-next-icon(aria-hidden='true')
+                      span.sr-only Next
+
+            .imagebox__open
+              img(src="../images/x.png", alt="")
+          ul.imagebox__items
+            li.imagebox__item(data-target="#carouselExampleCaptions" data-slide-to="0")
+              img.itemclick.active(src="../images/item4.png")      
+            li.imagebox__item(data-target="#carouselExampleCaptions" data-slide-to="1")
+              img.itemclick(src="../images/item2.png")            
+            li.imagebox__item(data-target="#carouselExampleCaptions" data-slide-to="2")
+              img.itemclick(src="../images/item3.png")
+            li.imagebox__item(data-target="#carouselExampleCaptions" data-slide-to="3")
+              img.itemclick(src="../images/item2.png")
+            li.imagebox__item(data-target="#carouselExampleCaptions" data-slide-to="4")
+              img.itemclick(src="../images/item4.png")
+
+        .about__text.col-xl-6.col-lg-6.col-md-12
+          include ../blocks/titlebox/titlebox
+          +titlebox('ТЕМНЫЙ ШОКОЛАД / БИСКВИТ') 
+          p
+            | There are many variations of passages of Lorem Ipsum available, but the majority 
+            | have suffered alteration in some form, by injected humour, or randomised words 
+            | which don't look even slightly believable. If you are going to use a passage 
+            | of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden 
+            | in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat 
+            | predefined chunks as necessary, making this the first true generator on the Internet. 
+            | It uses a dictionary of over 200 Latin words, combined with a handful of model 
+            | sentence structures, to generate Lorem Ipsum which looks reasonable. The 
+            | generated Lorem Ipsum is therefore always free from repetition, injected humour, 
+            | or non-characteristic words etc.
+          p.second__paragraph
+            | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below 
+            | for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum 
+            | et Malorum" by Cicero are also reproduced in their exact original form, 
+            | accompanied by English versions from the 1914 translation by H. Rackham. 
+          p.price
+            | 200 РУБ
+
+  .innerassortment
+    .innerassortment__wrapper.container
+        include ../blocks/titlebox/titlebox
+        +titlebox('ПОХОЖИЕ ПРОДУКТЫ')
+        .innerassortment_product.product.row
+          include ../blocks/product-item/product-item
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-8', 'dddddddddddddddddd', 'Шоколад')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-9', 'dddddddddddddddddd', 'Шоколад')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-10', 'dddddddddddddddddd', 'Шоколад')         

@@ -1,0 +1,88 @@
+extend ../partials/page.pug
+block section
+    .pagelinks#pagelinks
+        .container
+            .row
+                nav(aria-label='breadcrumb')
+                    ol.breadcrumb
+                        li.breadcrumb-item
+                            a(href='index.html') Главная 
+                            span > 
+                        li.breadcrumb-item.active(aria-current='page') Контакты
+    #contacts_page
+        .contacts 
+            .contacts_box.container
+
+                include ../blocks/titlebox/titlebox
+                +titlebox('КОНТАКТЫ')
+                    .titlebox__border
+
+                //- h2.contacts__title.row
+                //-     |   КОНТАКТЫ
+                ul.contacts__list.row
+                    li.contacts__item
+                        span A.:  
+                        | г.Москва, ул. Краснобогатырская д2.стр2
+                    li.contacts__item
+                        span Т.:  
+                        | +7(495) 728-66-50         
+                    li.contacts__item  
+                        span П.:  
+                        | zakaz@giftplatz.ru   
+                    li.contacts__item.contacts__item--social
+                        span С.:  
+                        .social__box
+                            a(href="")  
+                                include ../images/inst.svg
+                            a(href="") 
+                                include ../images/fb.svg
+        .touch
+            .touch_box.container
+                include ../blocks/titlebox/titlebox
+                +titlebox('ОСТАВЬТЕ СООБЩЕНИЕ')
+                    .titlebox__border
+                
+                //- h3.touch__title.row
+                //-     | ОСТАВЬТЕ СООБЩЕНИЕ
+                //- .touch__underline
+
+                form#contactform.touch__wrapper.needs-validation.row(action="", method="", novalidate='')
+                    .touch__left.col-lg-6.col-xl-6
+                        .input__group
+                            input.touch__input.touch__name.form-control#touch__name(type="text", placeholder="Как Вас зовут?" required='')
+                            .invalid-feedback.d-block.invisible
+                                |   Поле не может быть пустым
+                        .input__group
+                            input.touch__input.touch__phone.form-control#touch__phone(type="tel", placeholder="Введите номер телефона" required='')
+                            .invalid-feedback.d-block.invisible
+                                |   Неправильный формат телефона         
+                        .input__group
+                            input.touch__input.touch__mail.form-control#touch__mail(type="email", placeholder="Эл. почта" required='')
+                            .invalid-feedback.d-block.invisible
+                                |   Неправильный формат почты
+                    .touch__right.col-lg-6.col-xl-6
+                        .input__group
+                            textarea.touch__input.touch__textarea.touch__text.form-control#textarea(type="text", cols="30", rows="6", maxlength="350", placeholder="Оставьте Ваше сообщение" required='')
+                            .invalid-feedback.invalid-feedback--textarea.d-block.invisible
+                                |   Поле не может быть пустым               
+                        button#modalopenbutton.d-none(data-toggle="modal", data-target="#sendmessageModal")
+                        button#mainformsubmit(type="submit") Отправьте сообщение
+
+                #sendmessageModal.modal.fade
+                    .modal-dialog.modal-dialog-centered(role='document')
+                        .modal-content
+                            .modal-header
+                                .modal-title
+                                    img(src="../images/logo.svg", alt="")
+                                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                    span(aria-hidden='true') × 
+                            .modal-body
+                                p
+                                    | Спасибо за ваше сообщение.
+                                p
+                                    | Наши менеджеры свяжутся с вами.
+
+        .googlemap
+            .googlemap__box
+                iframe(width='100%', height='500', src='https://maps.google.com/maps?width=100%&height=500&hl=en&q=%D0%B3.%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B1%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B42.%D1%81%D1%82%D1%802+(My%20Business%20Name)&ie=UTF8&t=&z=17&iwloc=B&output=embed', frameborder='0', scrolling='no', marginheight='0', marginwidth='0')
+                    a(href="https://www.maps.ie/coordinates.html") gps coordinates finder

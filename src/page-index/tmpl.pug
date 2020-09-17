@@ -1,0 +1,57 @@
+extend ../partials/page.pug
+block title
+  .titlebox
+    h1.titlebox__title
+      | ШОКОЛАД
+    h3.titlebox__subtitle
+      | и не только... 
+  //- .scrollbox
+  //-   include ../images/scroll.svg
+  //-   include ../images/arrow_down.svg
+  //-   p
+  //-     | Узнать больше
+       
+block section
+  .about
+    .about__box.container
+      .about__wrapper.row
+        .about__imagebox.imagebox.col-xl-5.col-lg-6.col-md-12
+          .imagebox__wrapper
+            img.imagebox__photo(src="../images/about.png", alt="")
+        .about__text.col-xl-7.col-lg-6.col-md-12
+          h2
+            | О НАС
+          p
+            | Компания GiftPlatz занимается разработкой и производством оригинальных подарков.
+          p.second__paragraph
+            | В основе каждого подарка GiftPlatz – вкус и, в первую очередь это вкус шоколада. 
+            | Мы сами производим шоколад,  используя лучшее импортное сырье и необычные рецепты.
+          p.second__paragraph
+            | Мы создаем концепцию подарка индивидуально для каждого клиента. Подбираем все 
+            | составляющие , изготавливаем под каждый подарок упаковку и полиграфические материалы.  
+            | У нас собственное производство упаковки, подарочных коробок, открыток и пакетов.
+          p.second__paragraph
+            | Своим  клиентам мы всегда готовы предложить  стильные и практичные идеи.
+          p.second__paragraph
+            | С нами вы не окажетесь в нелепой ситуации обмена ненужными сувенирами с партнерами. 
+
+  .actual
+    .actual__wrapper.container
+      include ../blocks/titlebox/titlebox
+      +titlebox('Актуальное сейчас')
+      .actual__assortment.row
+        include ../blocks/product-item/product-item
+        .product-item.product.col-lg-4.col-xl-4.col-md-6
+          +product-item('product__image-1', 'dddddddddddddddddd', 'Шоколад')
+        .product-item.product.col-lg-4.col-xl-4.col-md-6
+          +product-item('product__image-2', 'dddddddddddddddddd', 'Шоколад')
+        .product-item.product.col-lg-4.col-xl-4.col-md-6
+          +product-item('product__image-3', 'dddddddddddddddddd', 'Шоколад')
+        .product-item.product.col-lg-4.col-xl-4.col-md-6
+          +product-item('product__image-4', 'dddddddddddddddddd', 'Шоколад')
+        .product-item.product.col-lg-4.col-xl-4.col-md-6
+          +product-item('product__image-5', 'dddddddddddddddddd', 'Шоколад')
+        .product-item.product.col-lg-4.col-xl-4.col-md-6
+          +product-item('product__image-6', 'dddddddddddddddddd', 'Шоколад')
+          
+          

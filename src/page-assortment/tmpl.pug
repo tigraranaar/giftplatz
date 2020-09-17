@@ -1,0 +1,42 @@
+extend ../partials/page.pug
+block section
+  .pagelinks#pagelinks
+      .container
+        .row
+          nav(aria-label='breadcrumb')
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href='index.html') Главная 
+                span > 
+              li.breadcrumb-item.active(aria-current='page') Ассортимент
+  .assortment 
+    .assortment__wrapper.container
+        include ../blocks/titlebox/titlebox
+        +titlebox('Ассортимент')
+        .assortment_product.product.row
+          include ../blocks/product-item/product-item
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-8', 'dddddddddddddddddd', 'Шоколад', 'innerassortment.html')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-9', 'dddddddddddddddddd', 'Шоколад')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-10', 'dddddddddddddddddd', 'Шоколад')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-11', 'dddddddddddddddddd', 'Шоколад')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-8', 'dddddddddddddddddd', 'Шоколад')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-9', 'dddddddddddddddddd', 'Шоколад')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-10', 'dddddddddddddddddd', 'Шоколад')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-11', 'dddddddddddddddddd', 'Шоколад')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-8', 'dddddddddddddddddd', 'Шоколад')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-9', 'dddddddddddddddddd', 'Шоколад')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-10', 'dddddddddddddddddd', 'Шоколад')
+          .product-item.product.col-lg-4.col-xl-4.col-md-6
+            +product-item('product__image-11', 'dddddddddddddddddd', 'Шоколад')
+            

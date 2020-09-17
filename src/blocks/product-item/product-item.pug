@@ -1,0 +1,7 @@
+mixin product-item(id, paragraph, title, href)
+  a.productbox.product__box#productbox(href= href)
+    .productbox__image.lazy(id= id)
+      .productbox__paragraph= paragraph
+    .productbox__title
+      h3= title
+        

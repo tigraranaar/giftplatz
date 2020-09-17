@@ -1,0 +1,10 @@
+.main
+    .header
+        .header__logo
+            //- include ../../images/logo.svg
+            img(src="../images/logo.svg", alt="logo")
+        a.header__burger(href='#PhoneMenu', role='button', data-toggle='modal')
+            include ../../images/menu.svg
+        include ../phone-menu/phone-menu.pug
+        include ../nav/nav.pug
+    block title

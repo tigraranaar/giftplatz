@@ -1,0 +1,64 @@
+@import 'fonts';
+@import './media.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/phone-menu/phone-menu.scss';
+@import '../blocks/nav/nav.scss';
+@import '../blocks/footer/footer.scss';
+@import '../blocks/product-item/product-item.scss';
+@import '../blocks/titlebox/titlebox.scss';
+
+body {
+  min-width: 320px;
+  font-family: 'PoiretOne', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  @media(max-width: 320px){
+    min-width: 320px !important;
+  }
+}
+
+.lazy {
+  background-image: none !important;
+  background-color: #F1F1FA;
+}
+
+.activePhone {
+  color: #656666 !important;
+}
+
+#pagelinks {
+  margin-bottom: -1px;
+  background-color: #e7e9e6;
+  
+  .container {
+    .row {
+      nav {
+        ol {
+          margin-bottom: 0;
+          background-color: #e7e9e6 !important;
+  
+          li {
+            padding: 0;
+            
+            a {
+              color: #2d3033;
+              text-decoration: underline;
+            }
+
+            span {
+              padding: 0 10px;
+            }
+
+            &:before {
+              display: none;
+            }
+          }
+          .active {
+  
+          }
+        }
+      }
+    }
+  }
+}
