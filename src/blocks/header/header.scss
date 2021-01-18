@@ -1,13 +1,21 @@
 .main {
-  // background: #ffffff url(../images/bg.jpg) 100% 100% no-repeat;
-  background: #ffffff url(../images/bg.png) 100% 100% no-repeat;
-  
-  background-position: center;
-  background-size: cover;
+  background-image: url(../images/bg.png);
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% auto;;
 
-  // @media(max-width:1906px){
-  //   background-size: auto;
-  // }
+  @media(max-width:1906px){
+    background-size: 130% auto;
+  }
+
+  @media(max-width:1440px){
+    background-size: 175% auto;
+  }
+
+  @media(max-width:992px){
+    background-size: auto auto;
+  }
 
   .header {
     position: relative;

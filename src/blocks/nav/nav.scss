@@ -10,23 +10,14 @@
 }
  
 .header__nav {
-  justify-content: center;
-  padding-left: 4.4%;
-  padding-right: 5.4%;
-
-  @media(max-width: 1439px){
-    padding-left: 0;
-    padding-right: 0;
-  }
+  display: flex;
+  justify-content: space-evenly
+  ;
 
   .call {
     display: flex;
     color: #e0e0e0;
     font-size: 17px;
-
-    .call__phone {
-
-    }
 
     .call__number {
       color: #e0e0e0;
@@ -38,13 +29,18 @@
 
     @media(min-width: 991px){
       padding-bottom: 5px;
+      margin-top: 5px;
+      padding-left: 10px;
     }
-  }
+   }
+
   #navbarSupportedContent {
     .nav__menu {
       margin: 0;
       width: 100%;
       align-items: center;
+      display: flex;
+      flex-direction: row;
   
       .active {
         .nav__link {
@@ -69,21 +65,10 @@
         }
         .dropdown-menu {
           background: url(../images/bg_menu.png);
-          // background-color: #2d3033;
           padding-left: 2px;
-          // border: 20px solid rgba(255, 0, 0, 0) !important;
           border:  0;
           margin: 0 !important;
           top: 40px !important;
-
-          // &:after {
-          //   content: '';
-          //   position: absolute;
-          //   left: 1px;
-          //   top: -38px;
-          //   border: 20px solid transparent;
-          //   border-bottom: 19px solid #2d3033;
-          //  }
 
           .dropdown-item {
             color: white;
@@ -109,7 +94,11 @@
         font-size: 17px;
         height: 48px;
         text-transform: uppercase;
-        margin-left: 10px !important; ///
+        margin-left: 20px !important; ///
+
+        @media(min-width: 1140px){
+          margin-left: 30px !important;
+        }
 
         &:first-child {
           @media(min-width: 1140px) and (max-width: 1400px){
@@ -129,6 +118,10 @@
           }
         }
       }
+    }
+
+    @media(max-width: 992px){
+      display: none;
     }
   }
 }
