@@ -4,7 +4,7 @@ import '../modules/contact-form';
 import '../modules/main';
 import './page.scss';
 
-const PageNumber = 5;
+const PageNumber = 6;
 
 document.addEventListener('DOMContentLoaded', () => {
   setActivePage(PageNumber);

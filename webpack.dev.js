@@ -13,10 +13,13 @@ module.exports = {
     index: './src/page-index/main.js',
     assortment: './src/page-assortment/main.js',
     innerassortment: './src/page-innerassortment/main.js',
+    portfolio: './src/page-portfolio/main.js',
     corporate: './src/page-corporate/main.js',
     pack: './src/page-pack/main.js',
     contacts: './src/page-contacts/main.js',
-    ddtest: './src/page-ddtest/main.js'
+    march: './src/page-corporate-1/main.js',
+    newyear: './src/page-corporate-2/main.js',
+    gifts: './src/page-corporate-3/main.js'
   },
 
   // https://webpack.js.org/configuration/dev-server/
@@ -120,6 +123,12 @@ module.exports = {
       filename: 'innerassortment.html'
     }),     
     new HtmlWebpackPlugin({
+      template: './src/page-portfolio/tmpl.pug',
+      inject: true,
+      chunks: ['portfolio'],
+      filename: 'portfolio.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/page-corporate/tmpl.pug',
       inject: true,
       chunks: ['corporate'],
@@ -138,10 +147,22 @@ module.exports = {
       filename: 'contacts.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/page-ddtest/tmpl.pug',
+      template: './src/page-corporate-1/tmpl.pug',
       inject: true,
-      chunks: ['ddtest'],
-      filename: 'ddtest.html'
+      chunks: ['march'],
+      filename: 'march.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/page-corporate-2/tmpl.pug',
+      inject: true,
+      chunks: ['newyear'],
+      filename: 'newyear.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/page-corporate-3/tmpl.pug',
+      inject: true,
+      chunks: ['gifts'],
+      filename: 'gifts.html'
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
