@@ -41,7 +41,7 @@
 
     &:hover {       
       .productbox__paragraph {
-        animation: 0.2s fadeIn;
+        animation: 0.5s fadeIn;
         animation-fill-mode: forwards;
       }
     }
@@ -68,6 +68,12 @@
     opacity: 0;
     visibility: hidden;
   }
+
+  // 50% {
+  //   visibility: visible;
+  //   opacity: 0.5;
+  // }
+  
   100% {
     visibility: visible;
     opacity: 1;
